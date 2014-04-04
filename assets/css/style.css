@@ -1,0 +1,161 @@
+
+table{
+	font-size: 100%;
+	vertical-align: center !important;	
+}
+
+.right{
+	float: right;
+}
+
+.clr{
+	float: none;
+	clear: both;
+}
+
+#placesTable{
+	font-size: 98%;
+}
+
+.wrapper{
+	padding-top: 50px;
+}
+
+.wholepageloader{	
+	position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    overflow: hidden;
+    background: url("../img/ajax_loader_square.gif") no-repeat scroll center center #111;
+    opacity: 0.8;
+}
+
+#tableDataLoader{
+	margin-bottom: 10px;
+}
+
+#detPhotoContainer {
+	margin-bottom: 5px;
+}
+
+#detPhotoContainer img, #places-photo.row img{
+	margin-right: 5px;
+	margin-bottom: 5px;
+	width: 174px;
+	height: 174px;
+}
+
+tr.showPlaceDetail{
+	cursor: pointer;
+}
+
+a.viewPlaces, a.deletePlaces, a.delBodiesBtn, a.editBodiesBtn{
+	display: inline;
+	margin-left: 5px;
+}
+
+
+
+#map-view{
+	left: 0px;
+	bottom: 0px;
+	top: 40px;
+	right: 650px;
+	position: fixed;
+	z-index: 1;
+}
+
+.ui-autocomplete-loading { 
+	background: white url("../img/ajax_loader_circle.gif") 95% center no-repeat;
+}
+
+.ui-menu .ui-menu-item a,.ui-menu .ui-menu-item a.ui-state-hover, .ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: -1px;
+	text-align:left;
+	font-size:12px;
+}
+
+#map-canvas{	
+	height: 100%;
+}
+
+#query-form{
+	position: fixed;
+	top: 70px;
+	left: 80px;
+	z-index: 2;
+}
+
+#form-add-places{
+	width: 650px;
+	float: right;	
+	position: relative;
+	background: #fff;
+	z-index: 3;
+	padding: 10px;
+}
+
+#form-add-places.row, #places-photo.row{
+	margin: 0px !important;
+}
+
+#places-photo{
+	margin: 0 auto;
+}
+
+body{
+	background-color: #f0f1f2;
+}
+
+
+.add-btn{
+	margin-bottom: 10px;
+	float: right;
+}
+
+.navbar-sharee{
+	background-color: #008a96;
+	border-radius: 0px;
+	border-width: 0px 0px 1px 0px;
+	border-color: #fff;
+}
+
+.navbar-sharee ul.nav li a{
+	color: #ddd;
+}
+
+.navbar-sharee ul.nav li a:hover, .navbar-sharee ul.nav li a:focus{
+	color: #008a96 !important;
+	background-color: #eee !important;
+}
+
+.navbar-sharee ul.dropdown-menu li a{
+	color: #008a96;
+}
+
+.navbar-sharee ul.dropdown-menu li a:hover{
+	background: #ededed;
+}
+
+.navbar-brand{
+	color: #ffffff !important;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;    
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 25px;
+    pointer-events: none;
+}
+
+.cat-table{
+
+}
