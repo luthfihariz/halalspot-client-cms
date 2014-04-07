@@ -35,7 +35,7 @@ class Halalbodies extends CI_Controller {
 	public function edit()
 	{
 		//upload file here
-		$dir = '/home/luthfihariz/dev/pymongotest/static/halal_logo/';
+		$dir = 'http://getsharee.com/static/';
 		$file = $dir.$_FILES['halalLogo']['name'];
 
 		$objectid = $this->input->post('bid');
@@ -63,10 +63,10 @@ class Halalbodies extends CI_Controller {
 	{
 		if($this->input->post('name')){			
 			//upload file here
-			$dir = '/home/luthfihariz/dev/pymongotest/static/halal_logo/';
+			$dir = 'http://getsharee.com/static/';
 			$file = $dir.$_FILES['halalLogo']['name'];			
 
-			$this->curl->create(API_HALALBODIES.'/'.$objectid);
+			$this->curl->create(API_HALALBODIES);
 			$this->curl->post(array(
 					'name' => $this->input->post('name'),
 					'shortName' => $this->input->post('shortName'),
@@ -82,7 +82,7 @@ class Halalbodies extends CI_Controller {
 				));
 			$this->curl->execute();
 			move_uploaded_file($_FILES['halalLogo']['tmp_name'], $file);
-			redirect('halalbodies/index','refresh');
+			//redirect('halalbodies/index','refresh');
 		}
 	}	
 
